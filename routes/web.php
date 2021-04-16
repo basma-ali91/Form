@@ -18,5 +18,10 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('form','formController@register');
-Route::post('form','formController@store');
+Route::get('createForm','formController@register');
+Route::post('storeForm','formController@store');
+Route::get('display','formController@display');
+Route::get('delete/{id}','formController@delete');
+Route::get('Edit/{id}','formController@edit');
+Route::post('Update','formController@update');
+
