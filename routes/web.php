@@ -24,4 +24,5 @@ Route::get('display','formController@display');
 Route::get('delete/{id}','formController@delete');
 Route::get('Edit/{id}','formController@edit');
 Route::post('Update','formController@update');
+Route::resource('Users','userController');
 
